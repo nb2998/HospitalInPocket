@@ -1,9 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.main.hospital.hospitalinpocket.Main6Activity">
+    tools:context="com.main.hospital.hospitalinpocket.Main6Activity"
 
-</android.support.constraint.ConstraintLayout>
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="80dp"
+        android:text="Emergency!!" />
+
+    <TextView
+        android:id="@+id/textView2"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="30dp"
+
+        android:text= "Name"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="36dp"
+        android:layout_weight="0.01" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Address"
+        android:layout_weight="0.01" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Medical History" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Would you like to attend the patient?"
+        android:layout_editor_absoluteY=""
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Accept" />
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Decline" />
+
+
+</LinearLayout>
