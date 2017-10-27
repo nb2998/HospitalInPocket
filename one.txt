@@ -1,0 +1,5 @@
+Features :
+1.An SOS is generated when a patient is struck with an emergent medical condition.
+2.This SOS request reaches to the doctor and he can decide if he wishes to attend the patient or not.
+3.The request matching is done on the basis of the medical history of the patient and the specialisation of the doctor.
+4.(peculiarity)If the doctor is associated with any hospital he/she can send the request for fetching the patient to his own prospective hospital immediately.
