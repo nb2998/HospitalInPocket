@@ -8,8 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.firebase.ui.auth.AuthUI;
-import com.google.firebase.auth.FirebaseAuth;
+//import com.firebase.ui.auth.AuthUI;
+//import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.Arrays;
 
@@ -17,8 +17,8 @@ import java.util.Arrays;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btnLoginPatient, btnLoginDr;
-    FirebaseAuth fbAuth;
-    FirebaseAuth.AuthStateListener authStateListener;
+//    FirebaseAuth fbAuth;
+//    FirebaseAuth.AuthStateListener authStateListener;
     public static final int SIGNINRQ=1;
 
     @Override
@@ -35,13 +35,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if(view.getId()==R.id.btnLoginDr){
-            signIn();
+//            signIn();
+            Intent i=new Intent(MainActivity.this,LoginActivity.class);
+            i.putExtra("login", "Dr");
+            startActivity(i);
+
         } else if(view.getId()==R.id.btnLoginPatient){
-            signIn();
+            Intent i=new Intent(MainActivity.this,LoginActivity.class);
+            i.putExtra("login","patient");
+            startActivity(i);
+//            signIn();
         }
     }
 
-    public void signIn(){
+   /* public void signIn(){
         fbAuth = FirebaseAuth.getInstance();
         authStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -63,16 +70,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             }
         };
-    }
+    }*/
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == SIGNINRQ) {
             if (resultCode == RESULT_OK) {
-                Toast.makeText(MainActivity.this, "Welcome " + fbAuth.getCurrentUser().getDisplayName(), Toast.LENGTH_LONG).show();
+//                Toast.makeText(MainActivity.this, "Welcome " + fbAuth.getCurrentUser().getDisplayName(), Toast.LENGTH_LONG).show();
 
             } else {
-                Toast.makeText(MainActivity.this, "Sign in failed", Toast.LENGTH_LONG).show();
+//                Toast.makeText(MainActivity.this, "Sign in failed", Toast.LENGTH_LONG).show();
                 finish();
             }
         }
