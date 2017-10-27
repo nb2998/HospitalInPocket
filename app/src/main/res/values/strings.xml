@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HospitalInPocket</string>
+    <string name="login_as_doctor">Login as Doctor</string>
 </resources>

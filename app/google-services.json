@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "423234887918",
+    "firebase_url": "https://hospitalinpocket.firebaseio.com",
+    "project_id": "hospitalinpocket",
+    "storage_bucket": "hospitalinpocket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423234887918:android:fbaff78bc5841734",
+        "android_client_info": {
+          "package_name": "com.main.hospital.hospitalinpocket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423234887918-kqd3jvb40avkbofuhejfdfkvvp38jrq4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.main.hospital.hospitalinpocket",
+            "certificate_hash": "4f617947bedd6ac8463e0d2cde6996d0b5485fdb"
+          }
+        },
+        {
+          "client_id": "423234887918-srfoav8s6rfilsevgrne4iq2qej31lt2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcOtFxmAaHEJUWgSFOi5lCsIvLxxoSD3w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "423234887918-srfoav8s6rfilsevgrne4iq2qej31lt2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
