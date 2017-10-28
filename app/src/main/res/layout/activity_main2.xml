@@ -11,10 +11,10 @@
 
   <TextView
       android:id="@+id/textView"
-      android:text="name "
+      android:text="name"
+      android:layout_marginLeft="180dp"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:layout_centerHorizontal="true"
       android:layout_alignParentTop="true"
       android:layout_alignParentLeft="true" />
 
@@ -23,21 +23,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Your previous emergency calls "
-        android:layout_alignBottom="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="74dp" />
+        android:layout_alignTop="@+id/button1"
+        android:layout_alignEnd="@+id/button1"
+        android:layout_marginEnd="39dp"
+        android:layout_marginTop="146dp" />
 
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/RecyclerView"
+      android:layout_width="match_parent"
+      android:paddingTop="100dp"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:layout_alignParentLeft="true">
 
+  </android.support.v7.widget.RecyclerView>
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="27dp"
-        android:text="PROFILE"
-        android:layout_marginEnd="26dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="175dp" />
+    <!--<Button-->
+        <!--android:id="@+id/button1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="27dp"-->
+        <!--android:text="PROFILE"-->
+        <!--android:layout_below="@+id/textView"-->
+        <!--android:layout_toEndOf="@+id/textView"-->
+        <!--android:layout_marginStart="34dp"-->
+        <!--android:layout_marginTop="18dp" />-->
 
 </RelativeLayout>

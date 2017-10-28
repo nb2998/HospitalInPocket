@@ -30,6 +30,7 @@ public class SignUpActivityDr extends AppCompatActivity {
                 Bundle b1 = new Bundle();
                 b1.putString("Name", name);
 
+
                 i.putExtras(b1);
                 startActivity(i);
             }

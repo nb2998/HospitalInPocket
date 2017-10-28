@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="19dp"
+        android:layout_marginTop="100dp"
         android:text="Previous emergency calls attended by you " />
 
     <android.support.v7.widget.RecyclerView
@@ -41,14 +41,14 @@
 
     </android.support.v7.widget.RecyclerView>
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/gridView1"
-        android:layout_below="@+id/editText1"
-        android:layout_marginRight="31dp"
-        android:layout_marginTop="20dp"
-        android:text="PROFILE" />
+    <!--<Button-->
+        <!--android:id="@+id/button1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignRight="@+id/gridView1"-->
+        <!--android:layout_below="@+id/editText1"-->
+        <!--android:layout_marginLeft="480dp"-->
+        <!--android:layout_marginTop="90dp"-->
+        <!--android:text="PROFILE" />-->
 
 </RelativeLayout>

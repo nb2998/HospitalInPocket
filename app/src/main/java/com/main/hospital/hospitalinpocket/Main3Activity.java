@@ -20,7 +20,7 @@ public class Main3Activity extends AppCompatActivity {
 
         t = (TextView)findViewById(R.id.textView);
         t1 = (TextView)findViewById(R.id.textView1);
-        b1 = (Button)findViewById(R.id.button1);
+//        b1 = (Button)findViewById(R.id.button1);       not showing profile
 
         Intent j = getIntent();
         Bundle b2 = j.getExtras();
@@ -30,19 +30,19 @@ public class Main3Activity extends AppCompatActivity {
         t.setText(v1);
 
 
-        b1.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View arg0) {
-                // TODO Auto-generated method stub
-
-                Intent i= new Intent(Main3Activity.this, Main5Activity.class);
-
-                startActivity(i);
-            }
-
-
-        });
+//        b1.setOnClickListener(new View.OnClickListener(){
+//
+//            @Override
+//            public void onClick(View arg0) {
+//                // TODO Auto-generated method stub
+//
+//                Intent i= new Intent(Main3Activity.this, Main5Activity.class);
+//
+//                startActivity(i);
+//            }
+//
+//
+//        });
     }
 }
 
