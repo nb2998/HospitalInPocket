@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Would you like to attend the patient?"
-        android:layout_editor_absoluteY=""
+
         android:gravity="center_horizontal" />
 
     <Button

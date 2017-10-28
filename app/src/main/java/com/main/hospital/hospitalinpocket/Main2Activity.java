@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
 
-     EditText et1;
-    TextView  t1;
+
+    TextView t, t1;
     Button b1;
 
 
@@ -20,9 +20,17 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        et1 = (EditText)findViewById(R.id.editText1);
+        t = (TextView)findViewById(R.id.textView);
         t1 = (TextView)findViewById(R.id.textView1);
         b1 = (Button)findViewById(R.id.button1);
+
+        Intent j = getIntent();
+        Bundle b2 = j.getExtras();
+
+        String v1 = b2.getString("Name");
+
+        t.setText(v1);
+
 
         b1.setOnClickListener(new View.OnClickListener(){
 

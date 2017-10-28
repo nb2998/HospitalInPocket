@@ -9,17 +9,18 @@
     android:paddingTop="10dp"
     tools:context="com.main.hospital.hospitalinpocket.Main3Activity" >
 
-    <EditText
-        android:id="@+id/editText1"
+    <TextView
+        android:id="@+id/textView"
+        android:text="Name "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/textView1"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="25dp"
         android:ems="10" >
 
         <requestFocus />
-    </EditText>
+    </TextView>
 
     <TextView
         android:id="@+id/textView1"
@@ -30,15 +31,15 @@
         android:layout_marginTop="19dp"
         android:text="Previous emergency calls attended by you " />
 
-    <GridView
-        android:id="@+id/gridView1"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
         android:layout_width="match_parent"
+        android:paddingTop="100dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
-        android:numColumns="4" >
-    </GridView>
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true">
+
+    </android.support.v7.widget.RecyclerView>
 
     <Button
         android:id="@+id/button1"
